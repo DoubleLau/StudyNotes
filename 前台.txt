@@ -1,0 +1,13 @@
+1.HTML5文档类型（Doctype）
+	在网页中，为了使HTML5元素和CSS属性正常工作，需要使用HTML5文档类型（Doctype）。
+	<!DOCTYPE html>
+	<html>
+	...
+	</html>
+2.移动设备优先
+	为使网站对移动设备友好，确保适当的绘制和屏幕缩放，需在head之中添加 viewport meta 标签。
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	通常情况下，maximum-scale=1.0 与 user-scalable=no 一起使用。禁用缩放功能，用户只能滚动屏幕，使网站看上去更像原生应用。
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
