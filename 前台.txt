@@ -11,3 +11,8 @@
 	</head>
 	通常情况下，maximum-scale=1.0 与 user-scalable=no 一起使用。禁用缩放功能，用户只能滚动屏幕，使网站看上去更像原生应用。
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+3.将外部JavaScript文件放在HTML文档最后引入，能使文档加载的更快。
+	<body>
+		...
+		<script type="text/javascript" src="jsFile.js"></script>
+	</body>
